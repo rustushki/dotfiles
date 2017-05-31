@@ -1,0 +1,36 @@
+[color]
+	ui = true
+[user]
+	name = Russ Adams
+[alias]
+	st   = status
+	ci   = commit
+	br   = branch
+	co   = checkout
+	df   = diff
+	dt   = difftool
+	lg   = log
+	l    = "!git log --graph --pretty='tformat:%C(yellow)%h{%C(green)%ar{%C(bold blue)%an{%C(red)%d%C(reset) %s' $* | column -t -s '{' | less -FXRS"
+	last = log -1 HEAD
+[diff]
+	tool = nvimdiff
+[merge]
+	tool = nvimmerge
+[mergetool]
+	keepBackup = false
+[difftool]
+	prompt = true
+[push]
+	default = simple
+[core]
+	editor = nvim -u ~/.vimrc
+[difftool "nvimdiff"]
+	cmd = nvim -d -u ~/.vimrc \"$LOCAL\" \"$REMOTE\"
+[mergetool "nvimmerge"]
+	cmd = "nvim -d -u ~/.vimrc -c \"wincmd J\" \"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\""
+	trustExitCode = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

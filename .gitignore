@@ -1,0 +1,6 @@
+.netrwhist
+*.swp
+*.swo
+bundle
+*.pyc
+vim/autoload/plug.vim.old

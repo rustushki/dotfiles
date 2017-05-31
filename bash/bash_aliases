@@ -1,0 +1,33 @@
+# One Letter Aliases
+alias v="nvim"
+alias g="git"
+alias c="clear"
+alias m='mysql -uroot'
+
+# Vim Aliases
+alias     vim="nvim"
+alias      vi="nvim"
+alias vimdiff="nvim -d"
+alias    nvim="nvim -u ~/.vimrc"
+
+# Other Helper Aliases
+alias gsc="cd ~/Config"
+alias extip="wget -qO- http://ipecho.net/plain ; echo"
+alias autoclick="/usr/local/bin/cautoclick -i 50 -n 10000 -p 10000"
+
+# Completions; Bash does not automatically expand aliases before completing..
+complete -o bashdefault -o default -o nospace -F _git g
+
+# CDU Helper
+# Moves up N directories, where N is provided as a command line parameter.
+function cdu
+{
+    cdupath=''
+    cdunum=${1:-1}
+    for (( cdui=0; cdui < $cdunum ; cdui++ )); do
+        cdupath="../$cdupath" ; 
+    done
+    cd $cdupath
+    pwd
+    unset cdupath cdui cdunum
+}

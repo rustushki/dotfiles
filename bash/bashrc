@@ -1,0 +1,29 @@
+# Pull in Stock Ubuntu bashrc configuration
+# ------------------------------------------------------------------------------
+. /etc/skel/.bashrc
+
+# Turn on Completion Loader for Git
+# ------------------------------------------------------------------------------
+_completion_loader git
+
+# Set Bash Shell Options
+# ------------------------------------------------------------------------------
+shopt -s histappend
+set -o vi
+
+# Set environment variables
+# ------------------------------------------------------------------------------
+
+# Long Term History with preservation between shell windows
+export HISTCONTROL=ignoredups:erasedups
+export HISTSIZE=100000
+export HISTFILESIZE=100000
+export PROMPT_COMMAND="history -a; history -n"
+
+# Useful prompt
+export PS1='\n\h : \w $(__git_ps1)\n\$ '
+
+# Preferred JDK
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

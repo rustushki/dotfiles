@@ -1,0 +1,12 @@
+" Initialization ----------------------"
+au!
+
+let mapleader = "'"
+
+" Vim Config --------------------------"
+source ~/.vim/cfg/plugins.vim
+source ~/.vim/cfg/auto.vim
+source ~/.vim/cfg/map.vim
+source ~/.vim/cfg/set.vim
+source ~/.vim/cfg/mode.vim
+source ~/.vim/cfg/command.vim
