@@ -15,4 +15,7 @@ Plug 'tpope/vim-commentary'
 Plug 'vim-scripts/xoria256.vim'
 Plug 'morhetz/gruvbox'
 
+" Syntax Schemes
+Plug 'martinda/Jenkinsfile-vim-syntax'
+
 call plug#end()
