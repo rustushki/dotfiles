@@ -23,6 +23,8 @@ export PROMPT_COMMAND="history -a; history -n"
 # Useful prompt
 export PS1='\n\h : \w $(__git_ps1)\n\$ '
 
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+
 # Preferred JDK
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
 
