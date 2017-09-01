@@ -13,7 +13,7 @@ Plug 'tpope/vim-commentary'
 
 " Color Schemes Bundles
 Plug 'vim-scripts/xoria256.vim'
-Plug 'morhetz/gruvbox'
+Plug 'nanotech/jellybeans.vim'
 
 " Syntax Schemes
 Plug 'martinda/Jenkinsfile-vim-syntax'

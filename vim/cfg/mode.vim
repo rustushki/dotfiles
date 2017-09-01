@@ -9,7 +9,7 @@ set nolist
 
 if &diff
 	" Set vimdiff theme.
-	colorscheme xoria256
+	colorscheme jellybeans
 	syntax off
 	set background=dark
 
@@ -21,7 +21,7 @@ if &diff
 
 else
 	set background=dark
-	colorscheme gruvbox
+	colorscheme jellybeans
 
 	" Combo which will close all vim buffers, but not if buffer unsaved
 	map <bar><bar> :qa<CR>
