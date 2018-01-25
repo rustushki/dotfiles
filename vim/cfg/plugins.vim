@@ -11,6 +11,9 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-commentary'
 
+" Fish Shell Highlighting
+Plug 'dag/vim-fish'
+
 " Color Schemes Bundles
 Plug 'vim-scripts/xoria256.vim'
 Plug 'nanotech/jellybeans.vim'

@@ -9,7 +9,7 @@ set nolist
 
 if &diff
 	" Set vimdiff theme.
-	colorscheme jellybeans
+	colorscheme xoria256
 	syntax off
 	set background=dark
 
